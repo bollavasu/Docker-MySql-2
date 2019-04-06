@@ -1,0 +1,10 @@
+
+docker build -t vasu-mysql-2 .                     (image name = vasu-mysql-2)
+
+docker run -d --name vasu-mysql-2 vasu-mysql-2     (container and image name = vasu-mysql-2)
+
+docker exec -it containerId bash
+mysql -u root -p
+show databases;
+use vasu;
+select * from articles;
